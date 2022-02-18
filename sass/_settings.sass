@@ -9,9 +9,25 @@
 
 *,*:before, *:after
     box-sizing: border-box
+    margin: 0
 html
     font-family: 'Roboto', serif
     font-size: 1rem
 
+.button
+    padding: 1.125rem 2.5rem
+    text-decoration: none
+    text-transform: uppercase
+    font-weight: bold
+    font-size: 1.0625rem
+    border-radius: 5px
+    &--primary
+        background-color: $darkerBlue
+        color: $light
+    &--secondary
+        padding: 1.0625rem 2.4375rem
+        background-color: transparent
+        color: $light
+        border: 1px solid $darkerBlue
 
 
