@@ -1,0 +1,36 @@
+.header
+    background: $light
+    .menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 0.9rem 0
+    .logo
+        display: flex
+        align-items: center
+        text-transform: uppercase
+        color: $primary
+        &__img
+            width: 25px
+            height: 27px
+            margin-right: 0.857rem
+        &__text
+            font-weight: bold
+    .nav
+        &__item
+            text-decoration: none
+            text-transform: uppercase
+            color: $secondary
+            padding: 1.428rem 0
+            margin-right: 4.4375rem
+            transition: color 0.2s
+            &:hover
+               color: $primary
+               font-weight: bold
+               border-bottom: 1px solid $blue
+            &:last-child
+                margin-right: 0
+    .phone
+        color: $primary
+        text-decoration: none
+    
