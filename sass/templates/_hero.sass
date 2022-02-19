@@ -1,4 +1,14 @@
 .hero
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    background: url('../img/hero-bg.png') no-repeat top 30px left 120px 
+    padding-top: 276px
+    padding-bottom: 0
+    .container
+        border-bottom: 1px solid rgba(234, 241, 247, 1)
+        padding-bottom: 7.25rem
     &__title
         font-weight: lighter
         font-size: 4.375rem
@@ -9,8 +19,70 @@
         font-size: 2.2rem
         margin-bottom: 1.8125rem
     &__desc
-        max-width: 21.75rem
-        margin-bottom: 5.375rem
+        max-width: 22.75rem
+        margin-bottom: 4.25rem
+    &__call
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 38.5625rem
+        margin-bottom: 17.3125rem
+    .call
+        &__button
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+        &__text
+            font-size: 1.5rem
+            max-width: 20.3125rem
+            &--strong
+                color: $lightenBlue
+    &-subcontent
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        &__title
+            display: flex
+            justify-content: center
+            font-weight: normal
+            font-size: 2rem
+            background: $light
+            padding: 1.25rem
+            margin-bottom: 1.25rem
+            max-width: 18.375rem
+        &__advantages
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 100%
+            .card
+                display: inline-block
+                &-title
+                    font-weight: lighter
+                    font-size: 19.375rem
+                    margin-left: -0.625rem
+                &-subtitle
+                    font-weight: bold
+                    font-size: 1.45rem
+                    max-width: 19.6875rem
+                    margin-bottom: 1.9375rem
+                    &--lighterW
+                        font-weight: normal
+                &-text
+                    max-width: 14.25rem
+                &-img
+                    padding-bottom: 2rem
+            .row
+                &:first-of-type
+                    align-items: flex-end
+            .percent
+                &--strong
+                    font-size: 7rem
+                    color: $lightenBlue
+                    margin-left: -3.75rem
     .button
+        &--primary
+            padding: 1.125rem 2.8rem
+            margin-bottom: 0.75rem
         &--secondary
             color: $darkerBlue
