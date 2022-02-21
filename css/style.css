@@ -783,16 +783,65 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background: url("../img/learning-bg.jpg") no-repeat center/cover;
   padding: 7.5rem 0;
 }
 
 .creation-learning__heading {
   max-width: 22.4375rem;
   text-align: center;
+  color: white;
   margin-bottom: 2.1875rem;
 }
 
-.days--strong {
+.creation .days--strong {
   color: #06BEE1;
+}
+
+.benefits {
+  padding-bottom: 24.25rem;
+  background: url("../img/creation_swiper-bg.jpg") no-repeat center;
+}
+
+.benefits .section-title__heading {
+  max-width: 29.875rem;
+  margin: auto;
+  margin-bottom: 18.5rem;
+}
+
+.benefits-swiper {
+  max-width: 1142px;
+  height: 20px;
+}
+
+.benefits .swiper-slide__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 19.6875rem;
+  margin: auto;
+}
+
+.benefits .swiper-slide__img {
+  margin-bottom: 3.25rem;
+}
+
+.benefits .swiper-slide__text {
+  margin-bottom: 1.9375rem;
+}
+
+.benefits .swiper-slide__desc {
+  max-width: 10.8125rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
