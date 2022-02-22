@@ -844,4 +844,107 @@ html {
   max-width: 10.8125rem;
   text-align: center;
 }
+
+.benefits .swiper-button__text {
+  color: #000000;
+  margin-top: 4rem;
+}
+
+.benefits .swiper-button-prev {
+  width: 120px;
+  background: url("../img/arrow-left.png") no-repeat center;
+  background-size: 52px;
+}
+
+.benefits .swiper-button-prev__text {
+  margin-left: 1rem;
+}
+
+.benefits .swiper-button-prev::after {
+  display: none;
+}
+
+.benefits .swiper-button-next {
+  width: 120px;
+  background: url("../img/arrow-right.png") no-repeat center;
+  background-size: 52px;
+}
+
+.benefits .swiper-button-next__text {
+  margin-right: 4rem;
+}
+
+.benefits .swiper-button-next::after {
+  display: none;
+}
+
+.steps {
+  border-bottom: 1px solid #eaf1f7;
+}
+
+.steps .section-title__heading {
+  margin-bottom: 1.8125rem;
+}
+
+.steps .section-title__subtitle {
+  max-width: 20.75rem;
+  margin-bottom: 6.25rem;
+}
+
+.steps-list__item {
+  text-align: center;
+  margin-left: -3rem;
+  font-size: 1.5rem;
+  list-style-type: none;
+  margin-bottom: 6.125rem;
+}
+
+.steps-list__item:last-of-type {
+  margin-bottom: 5.5625rem;
+}
+
+.steps__video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  background: url("../img/video.jpg") no-repeat center;
+  max-width: 59.0625rem;
+  min-height: 24.1875rem;
+  margin-bottom: 4.8125rem;
+}
+
+.steps .video__play {
+  position: relative;
+  margin: auto;
+  z-index: 99;
+}
+
+.steps-example {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.steps-example__title {
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+
+.steps-example__subtitle {
+  text-align: center;
+  max-width: 35.1875rem;
+  margin-bottom: 2.8125rem;
+}
 /*# sourceMappingURL=style.css.map */
