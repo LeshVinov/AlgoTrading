@@ -948,14 +948,16 @@ html {
   margin-bottom: 2.8125rem;
 }
 
+.format {
+  border-bottom: 1px solid #eaf1f7;
+}
+
 .format .section-title {
   margin-bottom: 4rem;
 }
 
 .format-card {
   color: white;
-  max-width: 33.75rem;
-  height: 23.1875rem;
   padding: 11.375rem 14.375rem 2.75rem 2.75rem;
 }
 
@@ -970,15 +972,19 @@ html {
 }
 
 .format-card__test {
-  background: url("../img/format1-bg.jpg");
+  background: url("../img/format1-bg.jpg") no-repeat center;
 }
 
 .format-card__help {
-  background: url("../img/format2-bg.jpg");
+  background: url("../img/format2-bg.jpg") no-repeat center;
 }
 
 .format-card__help .format-card__text {
   max-width: 17.0625rem;
+}
+
+.format .cards {
+  margin-bottom: 4.8125rem;
 }
 
 .format .card__img {
@@ -990,6 +996,6 @@ html {
 }
 
 .format .card__text {
-  max-width: 12.4375rem;
+  max-width: 16.4375rem;
 }
 /*# sourceMappingURL=style.css.map */
