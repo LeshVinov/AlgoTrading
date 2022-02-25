@@ -403,6 +403,19 @@ html {
           align-items: center;
 }
 
+.section-title--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
 .section-title__heading {
   font-weight: normal;
   font-size: 2.25rem;
@@ -997,5 +1010,29 @@ html {
 
 .format .card__text {
   max-width: 16.4375rem;
+}
+
+.progress {
+  background: url("../img/progress-bg.png") no-repeat bottom;
+}
+
+.progress .section-title__heading {
+  max-width: 29.8125rem;
+  text-align: left;
+  margin-bottom: 6.9375rem;
+}
+
+.progress .card__title {
+  font-size: 2rem;
+  margin-bottom: 1.9125rem;
+}
+
+.progress .card__subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 1.8125rem;
+}
+
+.progress .card__text {
+  max-width: 10.375rem;
 }
 /*# sourceMappingURL=style.css.map */
