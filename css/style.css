@@ -1012,27 +1012,96 @@ html {
   max-width: 16.4375rem;
 }
 
-.progress {
+.view {
   background: url("../img/progress-bg.png") no-repeat bottom;
 }
 
-.progress .section-title__heading {
+.view .section-title__heading {
   max-width: 29.8125rem;
   text-align: left;
   margin-bottom: 6.9375rem;
 }
 
-.progress .card__title {
+.view .card__title {
   font-size: 2rem;
   margin-bottom: 1.9125rem;
 }
 
-.progress .card__subtitle {
+.view .card__subtitle {
   font-size: 1.5rem;
   margin-bottom: 1.8125rem;
 }
 
-.progress .card__text {
+.view .card__text {
   max-width: 10.375rem;
+}
+
+.lessons {
+  background: url("../img/lessons-bg.jpg") no-repeat center/cover;
+  color: white;
+}
+
+.lessons .section-title__heading {
+  font-weight: bold;
+  color: white;
+}
+
+.lessons .section-title--left {
+  margin-bottom: 3.625rem;
+}
+
+.lessons-heading {
+  margin-bottom: 2.3125rem;
+}
+
+.lessons-questions {
+  padding-left: 1.1rem;
+  margin-bottom: 3.125rem;
+}
+
+.lessons-questions__item {
+  margin-bottom: 1.5625rem;
+}
+
+.lessons-questions__item::marker {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.lessons-questions__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.lessons-text {
+  font-weight: lighter;
+  max-width: 27.3875rem;
+  padding-left: 1.1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.lessons-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lessons-number__text {
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 3.3125rem;
+}
+
+.lessons-number__button {
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.lessons-number__button--active {
+  border: none;
+  color: white;
+  background-color: #06BEE1;
+  border-radius: 50%;
 }
 /*# sourceMappingURL=style.css.map */
