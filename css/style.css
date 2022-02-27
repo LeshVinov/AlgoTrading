@@ -376,6 +376,10 @@ html {
       flex-basis: 50%;
 }
 
+.col-50--width {
+  width: 48%;
+}
+
 .col-60 {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
@@ -436,6 +440,8 @@ html {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 .button--primary {
@@ -455,6 +461,11 @@ html {
   background-color: transparent;
   color: white;
   border: 1px solid white;
+}
+
+.button:hover {
+  -webkit-filter: drop-shadow(0px 5px 6px #0842b7);
+          filter: drop-shadow(0px 5px 6px #0842b7);
 }
 
 .header {
@@ -1039,6 +1050,7 @@ html {
 .lessons {
   background: url("../img/lessons-bg.jpg") no-repeat center/cover;
   color: white;
+  padding-top: 60px;
 }
 
 .lessons .section-title__heading {
@@ -1085,6 +1097,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 4.25rem;
 }
 
 .lessons-number__text {
@@ -1095,6 +1108,7 @@ html {
 .lessons-number__button {
   border: none;
   background: transparent;
+  padding: 0.65rem 0.9375rem;
   color: rgba(255, 255, 255, 0.5);
 }
 
@@ -1103,5 +1117,69 @@ html {
   color: white;
   background-color: #06BEE1;
   border-radius: 50%;
+}
+
+.lessons .col-50:last-of-type {
+  padding-top: 4rem;
+}
+
+.lessons-homework {
+  padding-bottom: 4.3125rem;
+  border-bottom: 1px solid #26556c;
+  margin-bottom: 4.9375rem;
+}
+
+.lessons-homework__title {
+  font-size: 1.5rem;
+  margin-bottom: 2.6875rem;
+}
+
+.lessons-homework__text {
+  max-width: 26.4875rem;
+}
+
+.lessons-homework__text::marker {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.lessons-homework .lessons-questions {
+  margin-bottom: 0;
+}
+
+.lessons-bonus__title {
+  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.lessons-bonus__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lessons-bonus__img {
+  margin-right: 1.9375rem;
+}
+
+.lessons-bonus__text {
+  max-width: 20.5375rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.lessons-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5.75rem;
+}
+
+.lessons-buttons__button {
+  margin-right: 1.8125rem;
 }
 /*# sourceMappingURL=style.css.map */

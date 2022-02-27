@@ -1,6 +1,7 @@
 .lessons
     background: url('../img/lessons-bg.jpg') no-repeat center / cover
     color: $light
+    padding-top: 60px
     .section
         &-title
             &__heading
@@ -27,15 +28,52 @@
     &-number
         display: flex
         align-items: center
+        margin-bottom: 4.25rem
         &__text
             color: rgba($light, 0.5)
             margin-right: 3.3125rem
         &__button
             border: none
             background: transparent
+            padding: 0.65rem 0.9375rem
             color: rgba($light, 0.5)
             &--active
                 border: none
                 color: $light
                 background-color: #06BEE1
                 border-radius: 50%
+    .col-50
+        &:last-of-type
+            padding-top: 4rem
+    &-homework
+        padding-bottom: 4.3125rem
+        border-bottom: 1px solid rgba(38, 85, 108, 1)
+        margin-bottom: 4.9375rem
+        &__title
+            font-size: 1.5rem
+            margin-bottom: 2.6875rem
+        &__text
+            max-width: 26.4875rem
+            &::marker
+                color: rgba($light, 0.5)
+        .lessons
+            &-questions
+                margin-bottom: 0
+    &-bonus
+        &__title
+            font-size: 1.5rem
+            margin-bottom: 1.75rem
+        &__desc
+            display: flex
+            align-items: center
+        &__img
+            margin-right: 1.9375rem
+        &__text
+            max-width: 20.5375rem
+            color: rgba($light, 0.5)
+    &-buttons
+        display: flex
+        justify-content: center
+        margin-top: 5.75rem
+        &__button
+            margin-right: 1.8125rem
