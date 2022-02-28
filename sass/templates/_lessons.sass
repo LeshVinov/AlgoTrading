@@ -31,7 +31,10 @@
         margin-bottom: 4.25rem
         &__text
             color: rgba($light, 0.5)
-            margin-right: 3.3125rem
+            margin-right: -6rem
+            margin-bottom: 4.25rem
+            max-width: 6.25rem
+            width: 100%
         &__button
             border: none
             background: transparent
@@ -77,3 +80,41 @@
         margin-top: 5.75rem
         &__button
             margin-right: 1.8125rem
+    .col
+        &-50
+            &--width
+                &:last-of-type
+                    .swiper
+                        padding-top: 4rem
+    .lessons-swiper-pagination
+        display: flex
+    .swiper-pagination-bullet 
+        width: 20px
+        height: 20px
+        text-align: center
+        line-height: 20px
+        font-size: 12px
+        color: rgba($light, 0.5)
+        opacity: 1
+        background: transparent
+    .swiper-pagination
+        position: relative
+    .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction
+        bottom: 0
+    .swiper-pagination-bullet-active 
+        color: #fff
+        background: #007aff
+    .swiper-button-next, .swiper-button-prev
+        position: relative
+        top: 0
+        margin-top: 0
+        &::after
+            display: none
+    .swiper-button-prev
+        width: 60px
+        background: url('../img/arrow-left--op.png') no-repeat center
+        margin-right: 11.9375rem
+    .swiper-button-next
+        width: 60px
+        background: url('../img/arrow-right--white.png') no-repeat center
+        margin-left: 11.9375rem

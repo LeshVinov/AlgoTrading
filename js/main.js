@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const swiper = new Swiper('.swiper', {
+    const swiper = new Swiper('.swiper-benefits', {
         loop: true,
       
         // Navigation arrows
@@ -9,24 +9,17 @@ $(document).ready(function () {
         },
       });
 
-      const secondSwiper = new Swiper('.swiper-second', {
-        // Optional parameters
-        direction: 'horizontal',
+      const secondSwiper = new Swiper(".lessons-swiper", {
         loop: true,
-      
-        // If we need pagination
         pagination: {
-          el: '.swiper-pagination',
+          el: ".swiper-pagination",
           clickable: true,
           renderBullet: function (index, className) {
             return '<span class="' + className + '">' + (index + 1) + "</span>";
+          },},
+          navigation: {
+            nextEl: '.lessons-swiper-button-next',
+            prevEl: '.lessons-swiper-button-prev',
           },
-        },
-      
-        // Navigation arrows
-        navigation: {
-          nextEl: '.lessons__swiper__button-next',
-          prevEl: '.lessons__swiper__button-prev',
-        },
       });
 });

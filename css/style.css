@@ -1102,7 +1102,10 @@ html {
 
 .lessons-number__text {
   color: rgba(255, 255, 255, 0.5);
-  margin-right: 3.3125rem;
+  margin-right: -6rem;
+  margin-bottom: 4.25rem;
+  max-width: 6.25rem;
+  width: 100%;
 }
 
 .lessons-number__button {
@@ -1181,5 +1184,61 @@ html {
 
 .lessons-buttons__button {
   margin-right: 1.8125rem;
+}
+
+.lessons .col-50--width:last-of-type .swiper {
+  padding-top: 4rem;
+}
+
+.lessons .lessons-swiper-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lessons .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  background: transparent;
+}
+
+.lessons .swiper-pagination {
+  position: relative;
+}
+
+.lessons .swiper-horizontal > .swiper-pagination-bullets, .lessons .swiper-pagination-bullets.swiper-pagination-horizontal, .lessons .swiper-pagination-custom, .lessons .swiper-pagination-fraction {
+  bottom: 0;
+}
+
+.lessons .swiper-pagination-bullet-active {
+  color: #fff;
+  background: #007aff;
+}
+
+.lessons .swiper-button-next, .lessons .swiper-button-prev {
+  position: relative;
+  top: 0;
+  margin-top: 0;
+}
+
+.lessons .swiper-button-next::after, .lessons .swiper-button-prev::after {
+  display: none;
+}
+
+.lessons .swiper-button-prev {
+  width: 60px;
+  background: url("../img/arrow-left--op.png") no-repeat center;
+  margin-right: 11.9375rem;
+}
+
+.lessons .swiper-button-next {
+  width: 60px;
+  background: url("../img/arrow-right--white.png") no-repeat center;
+  margin-left: 11.9375rem;
 }
 /*# sourceMappingURL=style.css.map */
