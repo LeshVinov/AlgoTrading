@@ -824,7 +824,7 @@ html {
 
 .benefits {
   padding-bottom: 24.25rem;
-  background: url("../img/creation_swiper-bg.jpg") no-repeat center;
+  background: #eaf1f7 url("../img/creation_swiper-bg.jpg") no-repeat center;
 }
 
 .benefits .section-title__heading {
@@ -1240,5 +1240,66 @@ html {
   width: 60px;
   background: url("../img/arrow-right--white.png") no-repeat center;
   margin-left: 11.9375rem;
+}
+
+.advantage {
+  background: #eaf1f7;
+}
+
+.advantage .section-title__heading {
+  margin-bottom: 3.75rem;
+}
+
+.advantage .section-title__subtitle {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 2.25rem;
+  font-size: 1.5rem;
+}
+
+.advantage-list__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 4.0625rem;
+}
+
+.advantage-list__container:last-of-type {
+  margin-bottom: 0;
+}
+
+.advantage-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.advantage-list__img {
+  margin-bottom: 1.3125rem;
+}
+
+.advantage-list__title {
+  font-size: 1rem;
+}
+
+.advantage-list__text {
+  text-align: center;
+  max-width: 15.4375rem;
 }
 /*# sourceMappingURL=style.css.map */
