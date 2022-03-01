@@ -371,6 +371,11 @@ html {
   width: 100%;
 }
 
+.col-30 {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+
 .col-50 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -1301,5 +1306,107 @@ html {
 .advantage-list__text {
   text-align: center;
   max-width: 15.4375rem;
+}
+
+.prices .section-title {
+  margin-bottom: 4.6875rem;
+}
+
+.prices .section-title__heading {
+  margin-bottom: 1.8125rem;
+}
+
+.prices .section-title__subtitle {
+  max-width: 22.75rem;
+}
+
+.prices .row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.prices .col-30:nth-of-type(2) .prices-text {
+  margin-bottom: 6rem;
+}
+
+.prices .col-30:nth-of-type(2) .prices-list__item {
+  border: 1px solid #eaf1f7;
+  border-top: none;
+  border-bottom: none;
+}
+
+.prices .col-30:nth-of-type(3) .prices-text {
+  margin-bottom: 5rem;
+}
+
+.prices-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.prices-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  min-height: 23.5625rem;
+}
+
+.prices-list__title {
+  font-size: 1.5rem;
+  margin-bottom: 1.6875rem;
+}
+
+.prices-list__price {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #06BEE1;
+  margin-bottom: 2.8125rem;
+}
+
+.prices-list__button {
+  background: transparent;
+  font-size: 1.0625rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #0842b7;
+  padding: 0.8rem 2.5875rem;
+  border: 1px solid #0842b7;
+  border-radius: 5px;
+}
+
+.prices-text {
+  margin-bottom: 4.25rem;
+  list-style-type: none;
+  padding: 0;
+}
+
+.prices-text__item {
+  margin-bottom: 1.8125rem;
+  max-width: 14.375rem;
+}
+
+.prices-text__item:last-of-type {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
