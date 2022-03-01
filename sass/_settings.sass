@@ -38,6 +38,7 @@ html
             display: flex
             flex-direction: column
             align-items: start
+            text-align: left
         &__heading
             font-weight: normal
             font-size: 2.25rem
@@ -45,6 +46,8 @@ html
             text-align: center
         &__subtitle
             text-align: center
+button
+    cursor: pointer
 .button
     padding: 1.125rem 2.5rem
     text-decoration: none
@@ -70,3 +73,13 @@ html
         border: 1px solid $light
     &:hover
         filter: drop-shadow(0px 5px 6px $darkerBlue)
+.video
+    position: relative
+    display: flex
+    margin: auto
+    max-width: 59.0625rem
+    min-height: 24.1875rem
+    &__play
+            position: relative
+            margin: auto
+            z-index: 99

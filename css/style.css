@@ -423,6 +423,7 @@ html {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  text-align: left;
 }
 
 .section-title__heading {
@@ -434,6 +435,10 @@ html {
 
 .section-title__subtitle {
   text-align: center;
+}
+
+button {
+  cursor: pointer;
 }
 
 .button {
@@ -471,6 +476,22 @@ html {
 .button:hover {
   -webkit-filter: drop-shadow(0px 5px 6px #0842b7);
           filter: drop-shadow(0px 5px 6px #0842b7);
+}
+
+.video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 59.0625rem;
+  min-height: 24.1875rem;
+}
+
+.video__play {
+  position: relative;
+  margin: auto;
+  z-index: 99;
 }
 
 .header {
@@ -939,8 +960,6 @@ html {
   display: flex;
   margin: auto;
   background: url("../img/video.jpg") no-repeat center;
-  max-width: 59.0625rem;
-  min-height: 24.1875rem;
   margin-bottom: 4.8125rem;
 }
 
@@ -1416,6 +1435,7 @@ html {
 
 .learning-form .section-title {
   color: white;
+  margin-bottom: 2.75rem;
 }
 
 .learning-form .section-title__heading {
@@ -1444,5 +1464,255 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  max-width: 22.375rem;
+  width: 100%;
+  margin: auto;
+}
+
+.learning-form__input {
+  width: 100%;
+  text-indent: 1.125rem;
+  padding-top: 1.125rem;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+.learning-form__button {
+  width: 100%;
+}
+
+.feedback {
+  border-bottom: 1px solid #eaf1f7;
+}
+
+.feedback .section-title {
+  margin-bottom: 4rem;
+}
+
+.feedback__video {
+  background: url("../img/feedback.jpeg") no-repeat center;
+  margin-bottom: 4.8125rem;
+}
+
+.feedback-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.feedback-content__title {
+  font-size: 1.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.feedback-content__text {
+  max-width: 33.125rem;
+}
+
+.results {
+  background: url("../img/results-bg.svg") no-repeat left bottom;
+}
+
+.results .section-title__heading {
+  max-width: 17.5625rem;
+  text-align: left;
+  margin-bottom: 1.8125rem;
+}
+
+.results .section-title__subtitle {
+  max-width: 16rem;
+  text-align: left;
+}
+
+.results .row {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  max-width: 40.5rem;
+  width: 100%;
+}
+
+.results-examples__img {
+  margin-bottom: 2.8125rem;
+}
+
+.results-examples__name {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 1.9375rem;
+}
+
+.results-examples__text {
+  max-width: 15.8125rem;
+}
+
+.results-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cashback {
+  background: #eaf1f7 url("../img/cashback-bg.png") no-repeat right;
+}
+
+.cashback .section-title__heading {
+  font-weight: bold;
+  font-size: 1.5rem;
+  max-width: 19.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.questions {
+  background: radial-gradient(circle, #03225d 0%, #061826 73%);
+}
+
+.questions .section-title {
+  color: white;
+  margin-bottom: 1.9375rem;
+}
+
+.questions .section-title__heading {
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.9375rem;
+}
+
+.questions .section-title__subtitle {
+  max-width: 27.9375rem;
+}
+
+.questions-form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.questions .learning-form__input {
+  max-width: 16.5rem;
+  width: 100%;
+}
+
+.questions .learning-form__button {
+  max-width: 16.8125rem;
+}
+
+.footer-upper__title {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.footer-upper__email {
+  background: url("../img/mail.svg") no-repeat right 16px center;
+  text-indent: 1.1875rem;
+  border: 1px solid #cfdeee;
+  max-width: 16.5rem;
+  width: 100%;
+  padding: 1.0625rem 0;
+}
+
+.footer-below__subtitle {
+  max-width: 8.125rem;
+}
+
+.footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -1.875rem;
+  padding-top: 3.0625rem;
+  padding-right: 3.375rem;
+  border-top: 1px solid #eaf1f7;
+}
+
+.footer-contacts__item {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-contacts__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -3.375rem;
+  padding-top: 3.0625rem;
+  border-top: 1px solid #eaf1f7;
+}
+
+.footer-links__item {
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-links__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-social__link {
+  padding: 20px;
+  border: 1px solid #0842b7;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.footer-social__link:nth-of-type(1) {
+  background: url("../img/facbook.svg") no-repeat center;
+}
+
+.footer-social__link:nth-of-type(2) {
+  background: url("../img/vk.svg") no-repeat center;
+}
+
+.footer-social__link:nth-of-type(3) {
+  background: url("../img/yt.svg") no-repeat center;
+}
+
+.footer-social__link:nth-of-type(4) {
+  background: url("../img/inst.svg") no-repeat center;
+}
+
+.footer-social__link:nth-of-type(5) {
+  background: url("../img/arrow-up.svg") no-repeat center;
+  margin-right: 0;
 }
 /*# sourceMappingURL=style.css.map */

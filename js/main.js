@@ -22,4 +22,9 @@ $(document).ready(function () {
             prevEl: '.lessons-swiper-button-prev',
           },
       });
+
+      const thirdSwiper = new Swiper(".feedback-swiper", {
+        loop: true,
+      });
+
 });
