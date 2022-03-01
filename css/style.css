@@ -1409,4 +1409,40 @@ html {
 .prices-text__item:last-of-type {
   margin-bottom: 0;
 }
+
+.learning-form {
+  background: url("../img/form-bg.jpg") no-repeat center/cover;
+}
+
+.learning-form .section-title {
+  color: white;
+}
+
+.learning-form .section-title__heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  max-width: 26.3125rem;
+  margin-bottom: 1.625rem;
+  color: white;
+}
+
+.learning-form .section-title__subtitle {
+  max-width: 26rem;
+}
+
+.learning-form__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
