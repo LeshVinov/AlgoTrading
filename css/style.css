@@ -350,6 +350,7 @@ template {
 html {
   font-family: 'Roboto', serif;
   font-size: 1rem;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -492,6 +493,50 @@ button {
   position: relative;
   margin: auto;
   z-index: 99;
+}
+
+#button {
+  display: inline-block;
+  background: white url("../img/arrow-up.svg") no-repeat center;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #0842b7;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  -webkit-transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+
+#button::after {
+  content: '';
+  color: #fff;
+}
+
+#button:hover {
+  cursor: pointer;
+  background-color: #21d7f9;
+}
+
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+label.invalid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #06BEE1;
+}
+
+input.invalid {
+  border: 3px solid #06BEE1;
 }
 
 .header {
@@ -1461,12 +1506,13 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   max-width: 22.375rem;
   width: 100%;
   margin: auto;
+}
+
+.learning-form-input-group {
+  margin-bottom: 1rem;
 }
 
 .learning-form__input {
@@ -1476,7 +1522,7 @@ button {
   padding-bottom: 1rem;
   border-radius: 5px;
   border: none;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .learning-form__button {
@@ -1608,8 +1654,7 @@ button {
 }
 
 .questions .learning-form__input {
-  max-width: 16.5rem;
-  width: 100%;
+  width: 16.5rem;
 }
 
 .questions .learning-form__button {

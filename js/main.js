@@ -27,4 +27,95 @@ $(document).ready(function () {
         loop: true,
       });
 
+      new WOW().init();
+
+      var btn = $('#button');
+
+        $(window).scroll(function() {
+          if (($(window).scrollTop() > 300) && ($(window).scrollTop() < 12000)) {
+            btn.addClass('show');
+          } else {
+            btn.removeClass('show');
+          }
+        });
+        
+        btn.on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0}, '300');
+        });
+
+        var btn1 = $('button-top');
+
+        btn1.on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0}, '300');
+        });
+
+        // Валдиация формы
+        $('.learning-form__form').validate({
+          errorClass: "invalid",
+          rules: {
+            // simple rule, converted to {required:true}
+            userName: {
+              required: true,
+              minlength: 2,
+              maxlength: 15
+            },
+            userPhone: "required",
+            // compound rule
+            userEmail: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            userName: {
+                required:"Введите имя",
+                minlength:"Имя не короче двух символов",
+                maxlength:"Имя не длиннее 15 символов"
+            },
+            userPhone: "Введите телефон",
+            userEmail: {
+              required: "Введите почту в формате: name@domain.com",
+              email: "Введите корректный email, в формате: name@domain.com"
+            }
+          }
+        });
+
+        $('.questions-form__form').validate({
+          errorClass: "invalid",
+          rules: {
+            // simple rule, converted to {required:true}
+            userName: {
+              required: true,
+              minlength: 2,
+              maxlength: 15
+            },
+            userPhone: "required",
+            // compound rule
+            userEmail: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            userName: {
+                required:"Введите имя",
+                minlength:"Имя не короче двух символов",
+                maxlength:"Имя не длиннее 15 символов"
+            },
+            userPhone: "Введите телефон",
+            userEmail: {
+              required: "Введите в формате: name@domain.com",
+              email: "Введите корректный email, в формате: name@domain.com"
+            }
+          }
+        });
+
+        // маска для телефона
+
+        $('[type=tel]').mask('+7(000) 000-00-00');
+
+        // ------------------------------
+
 });

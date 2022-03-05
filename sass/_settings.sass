@@ -4,6 +4,7 @@
 html
     font-family: 'Roboto', serif
     font-size: 1rem
+    scroll-behavior: smooth
 
 .container
     width: 100%
@@ -83,3 +84,36 @@ button
             position: relative
             margin: auto
             z-index: 99
+
+#button
+    display: inline-block
+    background: $light url('../img/arrow-up.svg') no-repeat center
+    width: 50px
+    height: 50px
+    text-align: center
+    border: 1px solid $darkerBlue
+    border-radius: 50%
+    position: fixed
+    bottom: 30px
+    right: 30px
+    transition: background-color .3s,   
+    opacity .5s, visibility .5s
+    opacity: 0
+    visibility: hidden
+    z-index: 1000
+    &::after
+        content: ''
+        color: #fff
+    &:hover
+        cursor: pointer
+        background-color: lighten($lightenBlue, 10%)
+    &.show
+        opacity: 1
+        visibility: visible
+label
+    &.invalid
+        display: flex
+        color: $lightenBlue
+input
+    &.invalid
+        border: 3px solid $lightenBlue
