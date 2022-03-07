@@ -78,6 +78,20 @@ $(document).ready(function () {
             userEmail: {
               required: "Введите почту в формате: name@domain.com",
               email: "Введите корректный email, в формате: name@domain.com"
+            },
+            submitHandler: function(form) {
+              $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                  alert('Фомра отправлена, мы свяжемся с вами через 10 минут');
+                  $(form)[0].reset();
+                },
+                error: function (response) {
+                  console.error('Ошибка запроса ' + response);
+                }
+              });
             }
           }
         });
@@ -109,6 +123,20 @@ $(document).ready(function () {
               required: "Введите в формате: name@domain.com",
               email: "Введите корректный email, в формате: name@domain.com"
             }
+          },
+          submitHandler: function(form) {
+            $.ajax({
+              type: "POST",
+              url: "send.php",
+              data: $(form).serialize(),
+              success: function (response) {
+                alert('Фомра отправлена, мы свяжемся с вами через 10 минут');
+                $(form)[0].reset();
+              },
+              error: function (response) {
+                console.error('Ошибка запроса ' + response);
+              }
+            });
           }
         });
 
