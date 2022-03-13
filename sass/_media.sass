@@ -1,1 +1,441 @@
-// 111
+/* адаптация */
+
+.menu-btn
+    display: none
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+    .container
+        padding: 0 2rem
+    .hero
+        background: url(../img/hero-bg.png) no-repeat center top
+        padding-top: 11.625rem
+        &-subcontent
+            &__title
+                margin-top: 10rem
+            &__advantages
+                .card
+                    &-title
+                        font-size: 12.375rem
+
+        .card
+            &:nth-of-type(2)
+                margin-top: 6rem
+                margin-right: 1rem
+                margin-left: 1rem
+
+    .format
+        &-card
+            &__test
+                margin-right: 1rem
+
+    .cashback
+        background: #eaf1f7 url(../img/cashback-bg.png) no-repeat center
+
+    .questions
+        &-form
+            &__form
+                flex-direction: column
+                align-items: center
+        .learning
+            &-form
+                &__input
+                    margin-bottom: 1rem
+                &__button
+                    max-width: 16.6125rem
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+    .header
+        .logo
+            &__text
+                display: none
+        .contacts
+            &__phone
+                display: none
+    .hero
+        &__title
+            font-size: 3.375rem
+        &__subitile
+            font-size: 1.2rem
+        .row
+            flex-direction: column
+            flex-wrap: wrap
+            align-content: center
+        .card
+            &:nth-of-type(2)
+                margin-top: 3rem
+                margin-bottom: 3rem
+                margin-right: 0
+                margin-left: 0
+                .card
+                    &-text
+                        margin-right: 5.6rem
+    .creation            
+        &-text
+            max-width: 23.9375rem
+            text-align: center
+        .row
+            flex-direction: column
+        .col
+            &:nth-of-type(2)
+                margin-top: 1.4rem
+            &:last-of-type
+                margin-top: 0.4rem
+                .creation
+                    &-data
+                        &__text
+                            margin-right: 9.3rem
+        &-data
+            display: block
+            margin-bottom: 0
+            margin-top: 1rem
+    .format
+        .cards
+            flex-direction: column
+        &-card
+            &__test
+                margin-right: 0
+                margin-bottom: 1.5rem
+                padding: 11.375rem 20.375rem 2.75rem 2.75rem
+        .row
+            flex-wrap: wrap
+        .card
+            margin-right: 5%
+            margin-left: 5%
+    .lessons
+        &-number
+            &__text
+                margin-bottom: 2rem
+        &-swiper
+            &-pagination
+                flex-direction: column
+                margin-bottom: 1.5rem
+        .swiper
+            &-pagination
+                text-align: left
+            &-button
+                &-prev
+                    margin-right: 1.5rem
+            &-button
+                &-next
+                    margin-left: 0
+    .results
+        .section
+            &-title
+                &--left
+                    margin-bottom: 2rem
+        &-container
+            flex-direction: column
+    .footer
+        &-below
+            &__subtitle
+                display: none
+        &-contacts
+            border-top: none
+                
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+    /* burger-menu */
+
+    .menu-btn
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        cursor: pointer
+        transition: all .3s ease-in-out
+        margin-right: 10px
+        z-index: 4
+
+    .menu-btn__burger
+        width: 30px
+        height: 3px
+        background: $darkerBlue
+        border-radius: 5px
+        transition: all .5s ease-in-out
+    .menu-btn__burger::after,
+    .menu-btn__burger::before
+        content: ''
+        position: absolute
+        width: 30px
+        height: 3px
+        background: $darkerBlue
+        border-radius: 5px
+        transition: all .5s ease-in-out
+
+    .menu-btn__burger::before
+        transform: translateY(-10px)
+    .menu-btn__burger::after
+        transform: translateY(10px)
+    .menu-btn.open .menu-btn__burger
+        transform: translateX(-50px)
+        background: transparent
+    .menu-btn.open .menu-btn__burger::before
+        transform:  rotate(45deg) translate(35px, -35px)
+    .menu-btn.open .menu-btn__burger::after
+        transform:  rotate(-45deg) translate(35px, 35px)
+
+    
+    // __________________
+
+    .section
+        padding: 70px 0
+    .header
+        position: relative
+        .logo
+            &__text
+                display: block       
+        .menu
+            &__nav
+                position: absolute
+                top: -400%
+                left: 0
+                width: 100%
+                height: 50%
+                background: $light
+                margin-left: 0
+                z-index: 2
+                padding: 180px 0 0 0
+                transition: all .5s ease-in-out
+                background: white
+                display: flex
+                flex-direction: column
+                justify-content: center
+                &.open
+                    top: 0
+                    padding: 12.5rem 0
+                    max-width: 100%
+                    height: 100vh
+                .nav
+                    &__item
+                        width: 100%
+                        border-bottom: 1px solid $darkerBlue
+                        margin-right: 0
+                        text-align: center
+                            
+        .logo
+            z-index: 4 
+
+    .hero
+        background: $darkenGray
+        padding-top: 8.625rem
+        &__title
+            font-size: 2.375rem
+        &__subtitle
+            font-size: 1.375rem
+        &__call
+            margin-bottom: 0
+        .call
+            &__text
+                display: none
+        &-subcontent
+            &__title
+                margin-top: 5rem
+    .creation
+        &-data
+            display: flex
+        .col
+            &:nth-of-type(2)
+                margin-top: 1.4rem
+            &:last-of-type
+                margin-top: 0.4rem
+                .creation
+                    &-data
+                        &__text
+                            margin-right: 0rem
+    .benefits
+        padding: 120px 0
+        padding-bottom: 24.25rem
+        .swiper-button-next, .swiper-button-prev
+            top: 4%
+        .swiper-button-prev__text, .swiper-button-next__text
+            display: none
+        .swiper-button-prev, .swiper-rtl .swiper-button-next
+            left: 30px
+            right: auto
+        .swiper-button-next, .swiper-rtl .swiper-button-prev
+            right: 30px
+            left: auto
+    .steps
+        &-list
+            &__item
+                margin-bottom: 3.125rem
+    .format
+        &-card
+            &__test
+                padding: 11.375rem 14.375rem 2.75rem 2.75rem
+        .row
+            justify-content: center
+        .card
+            margin-bottom: 1.5rem
+    .view
+        background: url(../img/progress-bg.png) no-repeat bottom / cover
+        .row
+            flex-wrap: wrap
+    .lessons
+        display: none
+    .advantage
+        &-list
+            &__container
+                flex-direction: column
+            &__item
+                margin-bottom: 1.5rem
+            &__title
+                text-align: center
+    .prices
+        .row
+            flex-direction: column
+            justify-content: center
+            align-items: center
+        .col-30
+            margin-bottom: 1.5rem
+            &:nth-of-type(2)
+                .prices-list__item
+                    border: none
+                .prices-text
+                    margin-bottom: 1.5rem
+            &:nth-of-type(3) 
+                .prices-text
+                    margin-bottom: 1.5rem
+        &-text
+            margin-bottom: 1.5rem
+    .results
+        .section
+            &-title
+                &--left
+                    align-items: center
+                &__heading
+                    text-align: center
+                &__subtitle
+                    text-align: center
+        .row
+            flex-wrap: wrap
+            flex-direction: column
+            align-content: center
+        &-examples
+            margin-bottom: 2rem
+            &:last-of-type
+                margin-bottom: 0
+    .prices
+        &:nth-last-of-type(2)
+            display: none
+    .footer
+        &-upper
+            display: none
+        &-contacts
+            padding-top: 0
+        &-links
+            padding-top: 2rem
+            border: none    
+        &-social
+            flex-wrap: wrap
+            justify-content: center
+            &__link
+                margin-left: 2rem
+                margin-right: 0
+                margin-bottom: 1rem
+
+     
+
+
+
+/* Extra small Devices, Phones */
+@media only screen and (max-width: 480px) 
+    .button
+        font-size: 1rem
+    .section
+            &-title
+                &__heading
+                    font-size: 1.4rem
+    .hero
+        .container
+            padding-bottom: 0
+        &__title
+            font-size: 1.8rem
+        &__subtitle
+            font-size: 1.3rem
+        &-subcontent
+            &__advantages
+                .card
+                    &-title
+                        font-size: 5.375rem
+                .percent
+                    &--strong
+                        font-size: 4rem
+                        margin-left: -1rem
+    .creation
+        .col
+            &:last-of-type
+                margin-top: 2.6rem
+        &-learning
+            &__heading
+                font-size: 1rem
+    .benefits
+        display: none
+    .steps
+        &__video
+            display: none
+    .format
+        &-card
+            padding: 3.375rem 9.375rem 2.75rem 2.75rem
+            &__test
+                background: url(../img/format1-bg.jpg) no-repeat center / cover
+            &__help
+                background: url(../img/format2-bg.jpg) no-repeat center / cover
+        .card
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            text-align: center
+    .view
+        .card
+            margin-bottom: 1.8rem
+            &__title
+                margin-bottom: 0.2rem
+            &__subtitle
+                margin-bottom: 0.6rem
+            &:last-of-type
+                margin-bottom: 0
+    .advantage
+        padding-top: 2rem
+    .learning
+        &-form
+            padding: 2rem 1rem 2rem
+            &__form
+                align-items: center
+            &__button
+                width: auto
+                max-width: 11.625rem
+                font-size: 1rem
+    .feedback
+        &__video
+            display: none       
+    .cashback
+        .section
+            &-title
+                &__heading
+                    font-size: 1rem
+    .questions
+        padding: 2rem 0
+    .footer
+        &-upper
+            display: block
+            margin-bottom: 2rem
+            &__email
+                display: none
+        &-social
+            display: none
+
+@media only screen and (max-width: 365px)
+    #button
+        right: 10%
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+    // 
